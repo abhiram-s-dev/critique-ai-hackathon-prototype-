@@ -405,8 +405,7 @@ const AnalysisResults: React.FC<AnalysisResultsProps> = ({
       ? 'infinity'
       : `${Math.abs(analysis.aura)}`;
   const auraSignStr = analysis.aura >= 0 ? 'plus' : 'minus';
-  const auraDisplay =
-    analysis.aura === Infinity ? '∞' : `${analysis.aura >= 0 ? '+' : ''}${analysis.aura}`;
+
 
   // ── Phase helpers ──────────────────────────────────────────────────────────
   const setPhase = (key: string, phase: StatPhase) => {
